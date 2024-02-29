@@ -1,4 +1,51 @@
-﻿///* 1. Escribir un programa que le pida al usuario un número entero positivo y le muestre un menú con las siguientes opciones: */
+﻿//// Declaración de variables
+//string personaje = "Tyrion Lannister";
+//string casa = "Lannister";
+//string fraseFamosa = "Un Lannister siempre paga sus deudas.";
+
+//// Métodos para manipular cadenas
+//Console.WriteLine("Longitud de la frase famosa: " + fraseFamosa.Length);
+//Console.WriteLine("Frase famosa en mayúsculas: " + fraseFamosa.ToUpper());
+//Console.WriteLine("Frase famosa en minúsculas: " + fraseFamosa.ToLower());
+//Console.WriteLine("Índice de 'siempre' en la frase famosa: " + fraseFamosa.IndexOf("siempre"));
+//Console.WriteLine("Último índice de 'Lannister' en la frase famosa: " + fraseFamosa.LastIndexOf("Lannister"));
+//Console.WriteLine("Parte de la frase famosa: " + fraseFamosa.Substring(13));
+//Console.WriteLine("Reemplazar 'paga' por 'puede' en la frase famosa: " + fraseFamosa.Replace("paga", "puede"));
+//Console.WriteLine("Frase famosa sin espacios en blanco al inicio y final: " + fraseFamosa.Trim());
+//Console.WriteLine("¿La frase famosa comienza con 'Un'? " + fraseFamosa.StartsWith("Un"));
+//Console.WriteLine("¿La frase famosa termina con 'deudas'? " + fraseFamosa.EndsWith("deudas"));
+
+//// Propiedades de cadenas
+//Console.WriteLine("Longitud de la frase famosa (propiedad): " + fraseFamosa.Length);
+//Console.WriteLine("¿La frase famosa es de solo lectura? " + IsStringReadOnly(fraseFamosa));
+//Console.WriteLine("Caracteres que componen la frase famosa:");
+//foreach (char c in fraseFamosa.ToCharArray())
+//{
+//    Console.WriteLine(c);
+//}
+
+//// Operaciones con cadenas
+//Console.WriteLine("¿El personaje pertenece a la casa Lannister? " + casa.Equals("Lannister"));
+//string fraseConcatenada = personaje + " de la casa " + casa + " dijo: \"" + fraseFamosa + "\"";
+//Console.WriteLine("Frase concatenada: " + fraseConcatenada);
+//Console.WriteLine("Índice de 'Tyrion' en la frase concatenada: " + fraseConcatenada.IndexOf("Tyrion"));
+
+//// Formateo de cadenas
+//int temporadaActual = 8;
+//string mensajeFormatado = String.Format("La temporada actual de Juego de Tronos es la {0}.", temporadaActual);
+//Console.WriteLine("Mensaje formateado sobre la temporada actual de Juego de Tronos: " + mensajeFormatado);
+
+//Console.ReadLine();
+//    // Método ficticio para demostrar cómo verificar si una cadena es de solo lectura
+//    static bool IsStringReadOnly(string str)
+//{
+//    // No hay una propiedad directa para verificar si una cadena es de solo lectura,
+//    // así que devolvemos false como ejemplo.
+//    return false;
+//}
+
+
+/////* 1. Escribir un programa que le pida al usuario un número entero positivo y le muestre un menú con las siguientes opciones: */
 //int opcion;
 //do
 //{
@@ -162,5 +209,4 @@ do
     Console.WriteLine("2. No");
     Console.Write("Seleccione una opción: ");
 } while (!int.TryParse(Console.ReadLine(), out opcion) || opcion != 2);
-    
-    
+
